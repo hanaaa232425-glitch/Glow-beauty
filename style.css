@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff7fa;
+    color: #333;
+    transition: 0.3s;
+}
+
+/* HEADER */
+
+header {
+    background-color: #d96c91;
+    padding: 15px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    color: white;
+    font-size: 25px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#themeButton {
+    border: none;
+    background: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(
+        120deg,
+        #ffe1eb,
+        #fff7fa
+    );
+}
+
+.hero div {
+    max-width: 600px;
+}
+
+.small-title {
+    color: #d96c91;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.hero h2 span {
+    color: #d96c91;
+}
+
+.hero p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    background-color: #d96c91;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #b95176;
+}
+
+/* LAYANAN */
+
+section {
+    padding: 70px 10%;
+}
+
+.judul {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #d96c91;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #d96c91;
+    margin-bottom: 10px;
+}
+
+.card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.card h4 {
+    font-size: 18px;
+}
+
+/* BOOKING */
+
+.booking {
+    background-color: #ffe8ef;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d96c91;
+}
+
+.total {
+    margin: 25px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d96c91;
+}
+
+#hasil {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #d96c91;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* DARK MODE */
+
+.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark .hero {
+    background: #292929;
+}
+
+.dark .card,
+.dark form {
+    background-color: #333;
+    color: white;
+}
+
+.dark .booking {
+    background-color: #292929;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+

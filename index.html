@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Beauty MUA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Glow Beauty</h1>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#layanan">Layanan</a></li>
+                <li><a href="#booking">Booking</a></li>
+            </ul>
+
+            <button id="themeButton">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div>
+                <p class="small-title">MAKEUP ARTIST</p>
+                <h2>Makeup Cantik untuk <span>Hari Spesialmu</span></h2>
+                <p>
+                    Kami menyediakan jasa makeup untuk wisuda,
+                    pesta, lamaran, dan acara spesial lainnya.
+                </p>
+
+                <a href="#booking" class="button">Booking Sekarang</a>
+            </div>
+        </section>
+
+        <!-- LAYANAN -->
+        <section id="layanan">
+            <h2 class="judul">Layanan Makeup</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <div class="icon">💄</div>
+                    <h3>Makeup Wisuda</h3>
+                    <p>Makeup natural dan elegan untuk hari wisudamu.</p>
+                    <h4>Rp150.000</h4>
+                </div>
+
+                <div class="card">
+                    <div class="icon">👰</div>
+                    <h3>Makeup Lamaran</h3>
+                    <p>Makeup cantik dan anggun untuk acara lamaran.</p>
+                    <h4>Rp300.000</h4>
+                </div>
+
+                <div class="card">
+                    <div class="icon">✨</div>
+                    <h3>Makeup Party</h3>
+                    <p>Makeup glamor untuk pesta dan acara malam.</p>
+                    <h4>Rp250.000</h4>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BOOKING -->
+        <section id="booking" class="booking">
+            <h2 class="judul">Form Booking</h2>
+
+            <form id="bookingForm">
+
+                <label>Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Masukkan nama">
+
+                <label>Nomor WhatsApp</label>
+                <input type="tel" id="telepon" placeholder="08xxxxxxxxxx">
+
+                <label>Pilih Layanan</label>
+                <select id="layananSelect">
+                    <option value="">-- Pilih Layanan --</option>
+                    <option value="150000">Makeup Wisuda - Rp150.000</option>
+                    <option value="300000">Makeup Lamaran - Rp300.000</option>
+                    <option value="250000">Makeup Party - Rp250.000</option>
+                </select>
+
+                <label>Tanggal Booking</label>
+                <input type="date" id="tanggal">
+
+                <label>Catatan</label>
+                <textarea id="catatan" placeholder="Contoh: makeup natural, soft glam, dll."></textarea>
+
+                <div class="total">
+                    Total: <span id="totalHarga">Rp0</span>
+                </div>
+
+                <button type="submit" class="button">
+                    Booking Sekarang
+                </button>
+
+            </form>
+
+            <div id="hasil"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Glow Beauty MUA | Makeup Artist</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
